@@ -109,7 +109,7 @@ class MainApp extends StatelessWidget {
             width: 300,
             child: ProductCard(
               imageUrl:
-                  'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvjTR9CKfAaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
+                  'https://shorturl.at/oxA34',
               categoryName: 'Pants',
               productName: 'Men Linen Pants',
               price: 199.99,
