@@ -1,7 +1,7 @@
 name: flutter_product_card
-description: "A new Flutter package project."
+description: "Product Card Flutter Package"
 version: 0.0.1
-homepage: 
+homepage: https://github.com/iamkrishnagupta/flutter_product_card
 
 environment:
   sdk: '>=3.3.4 <4.0.0'

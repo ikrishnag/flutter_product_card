@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
                   imageUrl:
                       'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvjTR9CKfAaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
                   categoryName: 'Pants',
-                  shortDescription: 'Comfortable and airy. ',
+                  shortDescription: 'Comfortable & airy. ',
                   price: 35,
                   quantity: 3,
                   productName: 'Men Linen Pants',
