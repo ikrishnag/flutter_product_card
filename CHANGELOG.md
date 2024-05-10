@@ -1,6 +1,6 @@
 ## [0.0.1] 
 
-### (Initial Release) - 2024-05-10
+### Version 0.0.1 Initial Release (2024-05-11) 
 
 This is the initial release of the flutter_product_card package, introducing a customizable card widget for displaying product information in your Flutter applications.
 
@@ -10,3 +10,10 @@ This is the initial release of the flutter_product_card package, introducing a c
 - Customizable styling options for text color, card color, and font sizes.
 - Support for displaying discounted prices and ratings.
 - Added error handling for image loading.
+
+## [0.0.2] 
+
+### Version 0.0.2 (2024-05-11)
+
+* Fixed minor bugs and issues related to image url.
+* Enhanced Documentation for better readability.
