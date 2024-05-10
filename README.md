@@ -118,11 +118,8 @@ ProductCard(
   borderRadius: 8.0, // Optional border radius
 )
 ```
-
 </td>
-<td>
-<img  src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png"  alt="Example Product Card Image">
-</td>
+<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png" alt="Example Product Card Image"></td>
 </tr>
 </table>
 
