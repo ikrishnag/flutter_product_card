@@ -1,5 +1,6 @@
-## [0.0.1] (Initial Release) - 2024-05-10
+## [0.0.1] 
 
+### (Initial Release) - 2024-05-10
 
 This is the initial release of the flutter_product_card package, introducing a customizable card widget for displaying product information in your Flutter applications.
 
