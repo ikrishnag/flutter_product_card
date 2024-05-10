@@ -121,7 +121,7 @@ ProductCard(
 ```
 
 </td>
-<td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvjTR9CKfAaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE" alt="Example Product Card Image">
+<td><img src="https://shorturl.at/msS38" alt="Example Product Card Image">
 </td>
 </tr>
 </table>
