@@ -9,7 +9,7 @@ class ProductCard extends StatefulWidget {
   final String imageUrl;
 
   /// A short description of the product.
-  final String shortDescription;
+  final String? shortDescription;
 
   /// The category name of the product.
   final String categoryName;
@@ -64,7 +64,7 @@ class ProductCard extends StatefulWidget {
     this.quantity = 1,
     this.id,
     this.isAvailable = true,
-    this.cardColor = const Color(0xFFF0F0F0),
+    this.cardColor = const Color(0xFFFFFFFF),
     this.textColor = const Color(0xFF000000),
     this.borderRadius = 12.0,
     this.rating,
@@ -164,11 +164,11 @@ class _ProductCardState extends State<ProductCard> {
                     ),
                   ),
                   // Short description (if provided)
-                  if (widget.shortDescription.isNotEmpty)
+                  if (widget.shortDescription!.isNotEmpty)
                     Padding(
                       padding: const EdgeInsets.only(top: 6.0),
                       child: Text(
-                        widget.shortDescription,
+                        widget.shortDescription!,
                         style: TextStyle(
                           color: widget.textColor.withOpacity(0.7),
                           fontSize: 14,
