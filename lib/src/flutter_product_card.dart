@@ -1,26 +1,58 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 
+/// A customizable card widget for displaying product information.
 class ProductCard extends StatefulWidget {
+  /// The unique identifier of the product.
   final String? id;
+
+  /// The URL of the product image.
   final String imageUrl;
+
+  /// A short description of the product.
   final String shortDescription;
+
+  /// The category name of the product.
   final String categoryName;
+
+  /// The name of the product.
   final String productName;
+
+  /// The quantity of the product.
   final int? quantity;
+
+  /// The price of the product.
   final double price;
+
+  /// The currency symbol used for the price.
   final String currency;
+
+  /// A callback function triggered when the card is tapped.
   final VoidCallback? onTap;
+
+  /// A callback function triggered when the favorite button is pressed.
   final VoidCallback? onFavoritePressed;
+
+  /// Indicates whether the product is available.
   final bool? isAvailable;
+
+  /// The background color of the card.
   final Color cardColor;
+
+  /// The text color used for labels and descriptions.
   final Color textColor;
+
+  /// The border radius of the card.
   final double borderRadius;
+
+  /// The rating of the product (optional).
   final double? rating;
+
+  /// The discount percentage of the product (optional).
   final double? discountPercentage;
 
+  /// Creates a [ProductCard] widget.
   const ProductCard({
-    Key? key,
+    super.key,
     required this.imageUrl,
     required this.categoryName,
     required this.productName,
@@ -37,7 +69,7 @@ class ProductCard extends StatefulWidget {
     this.borderRadius = 12.0,
     this.rating,
     this.discountPercentage,
-  }) : super(key: key);
+  });
 
   @override
   _ProductCardState createState() => _ProductCardState();
@@ -63,201 +95,176 @@ class _ProductCardState extends State<ProductCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildProductImage(),
-            _FavoriteButton(
-              isAdded: _isAdded,
-              onPressed: () {
-                setState(() {
-                  _isAdded = !_isAdded;
-                });
-                if (widget.onFavoritePressed != null) {
-                  widget.onFavoritePressed!();
-                }
-              },
-            ),
-            _buildProductDetails(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildProductImage() {
-    return Stack(
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(widget.borderRadius),
-          child: Image.network(
-            widget.imageUrl,
-            fit: BoxFit.cover,
-            height: 170,
-            width: double.infinity,
-            errorBuilder: (context, error, stackTrace) {
-              return Center(
-                child: Text('Failed to load image'),
-              );
-            },
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildProductDetails() {
-    return Padding(
-      padding: const EdgeInsets.all(12.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            widget.categoryName,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-              color: widget.textColor.withOpacity(0.6),
-            ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            widget.productName,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: widget.textColor,
-            ),
-          ),
-          if (widget.shortDescription.isNotEmpty)
-            Padding(
-              padding: const EdgeInsets.only(top: 8.0),
-              child: Text(
-                widget.shortDescription,
-                style: TextStyle(
-                  color: widget.textColor.withOpacity(0.7),
-                  fontSize: 14,
-                ),
-              ),
-            ),
-          if (widget.rating != null)
-            Padding(
-              padding: const EdgeInsets.only(top: 8.0),
-              child: Row(
-                children: List.generate(
-                  5,
-                  (index) => Icon(
-                    index < widget.rating!.round()
-                        ? Icons.star
-                        : Icons.star_border,
-                    color: Colors.orange,
-                    size: 16,
+            // Product image and favorite button
+            Stack(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(widget.borderRadius),
+                  child: Builder(
+                    builder: (context) {
+                      try {
+                        return Image.network(
+                          widget.imageUrl,
+                          fit: BoxFit.cover,
+                          height: 170,
+                          width: double.infinity,
+                        );
+                      } catch (e) {
+                        // Handle error
+                        return const Center(
+                          child: Text('Failed to load image'),
+                        );
+                      }
+                    },
                   ),
                 ),
-              ),
+                Positioned(
+                  top: 8,
+                  right: 8,
+                  child: IconButton(
+                    onPressed: () {
+                      setState(() {
+                        _isAdded = !_isAdded;
+                      });
+                      if (widget.onFavoritePressed != null) {
+                        widget.onFavoritePressed!();
+                      }
+                    },
+                    icon: Icon(
+                      _isAdded
+                          ? Icons.favorite_rounded
+                          : Icons.favorite_outline_rounded,
+                      color: _isAdded ? Colors.red : Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             ),
-          const SizedBox(height: 12),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              if (widget.isAvailable!)
-                Row(
-                  children: [
-                    Icon(
-                      Icons.check_circle,
-                      color: Colors.green,
-                      size: 18,
-                    ),
-                    SizedBox(width: 4),
-                    Text(
-                      'Available',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.green,
-                      ),
-                    ),
-                  ],
-                ),
-              if (!widget.isAvailable!)
-                Row(
-                  children: [
-                    Icon(
-                      Icons.do_disturb_alt_rounded,
-                      color: Colors.red,
-                      size: 18,
-                    ),
-                    SizedBox(width: 4),
-                    Text(
-                      'Out of Stock',
-                      style: TextStyle(
-                        color: Colors.red,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ],
-                ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
+            // Product details
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  if (widget.discountPercentage != null)
-                    Text(
-                      '${widget.discountPercentage?.toStringAsFixed(0)}% OFF',
-                      style: const TextStyle(
-                        color: Colors.red,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
+                  Text(
+                    widget.categoryName,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: widget.textColor.withOpacity(0.6),
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    widget.productName,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: widget.textColor,
+                    ),
+                  ),
+                  // Short description (if provided)
+                  if (widget.shortDescription.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Text(
+                        widget.shortDescription,
+                        style: TextStyle(
+                          color: widget.textColor.withOpacity(0.7),
+                          fontSize: 14,
+                        ),
                       ),
                     ),
-                  Text(
-                    '${widget.currency}${widget.price.toStringAsFixed(2)}',
-                    style: TextStyle(
-                      color: widget.textColor,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                  // Product rating (if available)
+                  if (widget.rating != null)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0),
+                      child: Row(
+                        children: List.generate(
+                          5,
+                          (index) => Icon(
+                            index < widget.rating!.round()
+                                ? Icons.star
+                                : Icons.star_border,
+                            color: Colors.orange,
+                            size: 16,
+                          ),
+                        ),
+                      ),
                     ),
+                  const SizedBox(height: 8),
+                  // Product availability and price
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      if (widget.isAvailable!)
+                        const Row(
+                          children: [
+                            Icon(
+                              Icons.check_circle,
+                              color: Colors.green,
+                              size: 18,
+                            ),
+                            SizedBox(width: 4),
+                            Text(
+                              'Available',
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.green,
+                              ),
+                            ),
+                          ],
+                        ),
+                      if (!widget.isAvailable!)
+                        const Row(
+                          children: [
+                            Icon(
+                              Icons.do_disturb_alt_rounded,
+                              color: Colors.red,
+                              size: 18,
+                            ),
+                            SizedBox(width: 4),
+                            Text(
+                              'Out of Stock',
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          // Product discount percentage (if available)
+                          if (widget.discountPercentage != null)
+                            Text(
+                              '${widget.discountPercentage?.toStringAsFixed(0)}% OFF',
+                              style: const TextStyle(
+                                color: Colors.red,
+                                fontSize: 12,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          // Product price
+                          Text(
+                            '${widget.currency}${widget.price.toStringAsFixed(2)}',
+                            style: TextStyle(
+                              color: widget.textColor,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _FavoriteButton extends StatefulWidget {
-  final bool isAdded;
-  final VoidCallback onPressed;
-
-  const _FavoriteButton({
-    Key? key,
-    required this.isAdded,
-    required this.onPressed,
-  }) : super(key: key);
-
-  @override
-  __FavoriteButtonState createState() => __FavoriteButtonState();
-}
-
-class __FavoriteButtonState extends State<_FavoriteButton> {
-  bool _isAdded = false;
-
-  @override
-  Widget build(BuildContext context) {
-    _isAdded = widget.isAdded;
-    return Positioned(
-      top: 8,
-      right: 8,
-      child: IconButton(
-        onPressed: () {
-          setState(() {
-            _isAdded = !_isAdded;
-          });
-          widget.onPressed();
-        },
-        icon: Icon(
-          _isAdded ? Icons.favorite_rounded : Icons.favorite_outline_rounded,
-          color: _isAdded ? Colors.red : Colors.white,
+            ),
+          ],
         ),
       ),
     );
