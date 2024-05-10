@@ -1,6 +1,6 @@
 # Flutter Product Card
 
-<!-- [![pub package](https://img.shields.io/pub/v/flutter_product_card.svg)](https://pub.dev/packages/flutter_product_card) -->
+[![pub package](https://img.shields.io/pub/v/flutter_product_card.svg)](https://pub.dev/packages/flutter_product_card)
 
 `flutter_product_card` is a highly customizable and feature-rich Flutter package for displaying product cards in e-commerce or shopping applications. With this package, you can easily create visually appealing product cards with various customization options.
 
