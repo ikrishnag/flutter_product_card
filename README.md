@@ -42,7 +42,7 @@ Then, use the `ProductCard` widget in your application:
 ```dart
 ProductCard(
   imageUrl:
-      'https://encrypted-tbn3.gstatic.com/sq=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
+      'https://shorturl.at/oxA34',
   categoryName: 'Pants',
   productName: 'Men Linen Pants',
   price: 199.99,
