@@ -18,6 +18,8 @@ This is the initial release of the flutter_product_card package, introducing a c
 * Fixed minor bugs and issues related to image url.
 * Enhanced Documentation for better readability.
 
+## [0.0.3] 
+
 ### Version 0.0.3 (2024-05-11)
 
 * Resolved minor bugs and issues that were reported or identified.
