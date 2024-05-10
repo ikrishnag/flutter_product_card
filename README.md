@@ -6,15 +6,15 @@ flutter_product_card is a highly customizable and feature-rich Flutter package f
 
 ## Features
 
-- Customizable card design with options for border radius, background color, and text color
-- Displays product image, name, category, description (optional), rating (optional), and price
-- Shows product availability status with icons and labels
-- Displays discount percentage (optional)
-- Favorite button to mark products as favorites
-- Tap callback for handling card tap events
-- Error handling for image loading with a placeholder
-- Extracted UI components for better code organization and reusability
-- Comprehensive documentation with examples
+- Customizable card design with options for border radius, background color, and text color.
+- Displays product image, name, category, description (optional), rating (optional), and price.
+- Shows product availability status with icons and labels.
+- Displays discount percentage (optional).
+- Favorite button to mark products as favorites.
+- Tap callback for handling card tap events.
+- Error handling for image loading with a placeholder.
+- Extracted UI components for better code organization and reusability.
+- Comprehensive documentation with examples.
 
 
 ## Installation- Getting started
@@ -27,6 +27,7 @@ dependencies:
     sdk: flutter
   flutter_product_card: ^0.0.1
 ```
+
 Then, run `flutter pub get` to install the package.
 
 ## Usage
@@ -36,16 +37,111 @@ Import the package in your Dart file:
 ```dart
 import 'package:flutter_product_card/flutter_product_card.dart';
 ```
+
 Then, use the `ProductCard` widget in your application:
 
-## Additional information
+```dart
+ProductCard(
+  imageUrl:
+      'https://encrypted-tbn3.gstatic.com/sq=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
+  categoryName: 'Pants',
+  productName: 'Men Linen Pants',
+  price: 199.99,
+  currency: '\$', // Default is '$'
+  onTap: () {
+    // Handle card tap event
+  },
+  onFavoritePressed: () {
+    // Handle favorite button press
+  },
+  shortDescription:
+      'comfortable & airy.', // Optional short description
+  rating: 4.2, // Optional rating
+  discountPercentage: 35.0, // Optional discount percentage
+  isAvailable: true, // Optional availability status
+  cardColor: Colors.white, // Optional card background color
+  textColor: Colors.black, // Optional text color
+  borderRadius: 8.0, // Optional border radius
+)
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Customization
+
+The ProductCard widget offers various properties to customize its appearance and behavior:
+
+- imageUrl: (String) The URL of the product image.
+- categoryName: (String) The category name of the product.
+- productName: (String) The name of the product.
+- price: (double) The price of the product.
+- currency: (String, optional) The currency symbol to display with the price (defaults to '$').
+- shortDescription: (String, optional) A short description of the product.
+- onTap: (VoidCallback, optional) A callback function triggered when the card is tapped.
+- onFavoritePressed: (VoidCallback, optional) A callback function triggered when the favorite icon is pressed.
+- isAvailable: (bool, optional) A flag indicating whether the product is available (defaults to true).
+- textColor: (Color, optional) The color used for text labels and descriptions (defaults to black).
+- discountPercentage: (double, optional) A value representing the discount percentage for the product (displays a discounted price).
+- rating: (double, optional) The product rating (not yet implemented in this version).
+
+<hr>
+
+# Additional information
+
+## Example
+
+For more detailed usage examples, please refer to the [example](https://github.com/iamkrishnagupta/flutter_product_card/tree/main/example) folder in the package repository.
+
+<table>
+<tr>
+<td>
+
+```dart
+ProductCard(
+  imageUrl:
+      'https://encrypted-tbn3.gstatic.com/sq=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
+  categoryName: 'Pants',
+  productName: 'Men Linen Pants',
+  price: 199.99,
+  currency: '\$', // Default is '$'
+  onTap: () {
+    // Handle card tap event
+  },
+  onFavoritePressed: () {
+    // Handle favorite button press
+  },
+  shortDescription:
+      'comfortable & airy.', // Optional short description
+  rating: 4.2, // Optional rating
+  discountPercentage: 35.0, // Optional discount percentage
+  isAvailable: true, // Optional availability status
+  cardColor: Colors.white, // Optional card background color
+  textColor: Colors.black, // Optional text color
+  borderRadius: 8.0, // Optional border radius
+)
+```
+
+</td>
+<td>
+<img  src=""  alt="Example Product Card Image">
+</td>
+</tr>
+</table>
+
+## Contributing
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements (eg. documentation improvement), please open an issue or submit a pull request on the [GitHub repository](https://github.com/iamkrishnagupta/flutter_product_card).
+
+## Author
+
+This package is created and maintained by [Krishna Gupta](https://github.com/iamkrishnagupta).
+
+## Contact
+
+If you want to connect or have any questions or need further assistance, feel free to reach out:
+
+- Email: e.krishnagupta@gamil.com
+- Twitter: [@krishnagtwt](https://twitter.com/krishnagtwt)
 
 
+## License
 
-
-//when ready, type dart pub publish --dry-run
-if zero warnings, type dart pub publish
+This package is released under the [MIT License](https://opensource.org/licenses/MIT).
