@@ -1,6 +1,6 @@
 name: flutter_product_card
 description: "A highly customizable and feature-rich Flutter package for creating beautiful and informative product cards in your e-commerce or shopping applications."
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/iamkrishnagupta/flutter_product_card
 
 environment:
