@@ -136,9 +136,7 @@ class MainApp extends StatelessWidget {
     );
   }
 }
-
 ```
-
 </td>
 <td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_product_card.png?raw=true" alt="Example Product Card Image">
 </td>
