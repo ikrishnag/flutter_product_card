@@ -119,7 +119,8 @@ ProductCard(
 )
 ```
 </td>
-<td><img src="example_card.png"></td>
+<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png?raw=true" alt="Example Product Card Image">
+</td>
 </tr>
 </table>
 
