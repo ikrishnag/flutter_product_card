@@ -130,6 +130,8 @@ class MainApp extends StatelessWidget {
   }
 }
 ```
+## Output
+
 </td>
 <td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_productcard.png?raw=true" alt="Example Product Card Image">
 </td>
