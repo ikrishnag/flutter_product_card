@@ -2,7 +2,7 @@
 
 This folder contains an example project demonstrating how to use the `flutter_product_card` package in a Flutter application.
 
-##Run the app**
+**Run the app**
 
 1. Clone the repo and navigate to `example`.
 2. Run `flutter pub get` to install dependencies.
