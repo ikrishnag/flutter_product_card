@@ -114,21 +114,14 @@ class MainApp extends StatelessWidget {
               onFavoritePressed: () {
                 // Handle favorite button press
               },
-              // Optional short description
               shortDescription:
-                  'comfortable & airy.',
-               // Optional rating
-               rating: 4.2,
-               // Optional discount percentage
-              discountPercentage: 35.0,
-              // Optional availability status
-              isAvailable: true,
-              // Optional card background color
-              cardColor: Colors.white,
-              // Optional text color
-              textColor: Colors.black,
-              // Optional border radius
-              borderRadius: 8.0,
+                  'comfortable & airy.', // Optional short description
+               rating: 4.2, // Optional rating
+              discountPercentage: 35.0, // Optional discount percentage
+              isAvailable: true, // Optional availability status
+              cardColor: Colors.white, // Optional card background color
+              textColor: Colors.black,  // Optional text color
+              borderRadius: 8.0, // Optional border radius
             ),
           ),
         ),
@@ -138,7 +131,7 @@ class MainApp extends StatelessWidget {
 }
 ```
 </td>
-<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_product_card.png?raw=true" alt="Example Product Card Image">
+<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_productcard.png?raw=true" alt="Example Product Card Image">
 </td>
 </tr>
 </table>
