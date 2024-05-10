@@ -164,6 +164,7 @@ If you want to connect or have any questions or need further assistance, feel fr
 
 - Email: e.krishnagupta@gmail.com
 - Twitter: [@krishnagtwt](https://twitter.com/krishnagtwt)
+- LinkedIn: [@iamkrishnagupta](https://www.linkedin.com/in/iamkrishnagupta)
 
 ## License
 
