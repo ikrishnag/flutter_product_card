@@ -1,4 +1,4 @@
-# Flutter Product Card
+# flutter_product_card
 
 [![pub package](https://img.shields.io/pub/v/flutter_product_card.svg)](https://pub.dev/packages/flutter_product_card)
 
