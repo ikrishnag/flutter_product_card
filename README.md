@@ -16,7 +16,6 @@ flutter_product_card is a highly customizable and feature-rich Flutter package f
 - Extracted UI components for better code organization and reusability.
 - Comprehensive documentation with examples.
 
-
 ## Installation- Getting started
 
 To use this package, add `flutter_product_card` as a dependency in your `pubspec.yaml` file:
@@ -90,7 +89,6 @@ The ProductCard widget offers various properties to customize its appearance and
 
 For more detailed usage examples, please refer to the [example](https://github.com/iamkrishnagupta/flutter_product_card/tree/main/example) folder in the package repository.
 
-
 <table>
 <tr>
 <td>
@@ -109,7 +107,7 @@ class MainApp extends StatelessWidget {
             width: 300,
             child: ProductCard(
               imageUrl:
-                  'https://shorturl.at/oxA34',
+                  'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvjTR9CKfAaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
               categoryName: 'Pants',
               productName: 'Men Linen Pants',
               price: 199.99,
@@ -120,14 +118,21 @@ class MainApp extends StatelessWidget {
               onFavoritePressed: () {
                 // Handle favorite button press
               },
+              // Optional short description
               shortDescription:
-                  'comfortable & airy.', // Optional short description
-              rating: 4.2, // Optional rating
-              discountPercentage: 35.0, // Optional discount percentage
-              isAvailable: true, // Optional availability status
-              cardColor: Colors.white, // Optional card background color
-              textColor: Colors.black, // Optional text color
-              borderRadius: 8.0, // Optional border radius
+                  'comfortable & airy.',
+               // Optional rating
+               rating: 4.2,
+               // Optional discount percentage
+              discountPercentage: 35.0,
+              // Optional availability status
+              isAvailable: true,
+              // Optional card background color
+              cardColor: Colors.white,
+              // Optional text color
+              textColor: Colors.black,
+              // Optional border radius
+              borderRadius: 8.0,
             ),
           ),
         ),
@@ -158,7 +163,6 @@ If you want to connect or have any questions or need further assistance, feel fr
 
 - Email: e.krishnagupta@gamil.com
 - Twitter: [@krishnagtwt](https://twitter.com/krishnagtwt)
-
 
 ## License
 
