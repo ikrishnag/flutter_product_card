@@ -90,7 +90,7 @@ The ProductCard widget offers various properties to customize its appearance and
 
 For more detailed usage examples, please refer to the [example](https://github.com/iamkrishnagupta/flutter_product_card/tree/main/example) folder in the package repository.
 
-<hr>
+
 <table>
 <tr>
 <td>
@@ -121,7 +121,7 @@ ProductCard(
 ```
 
 </td>
-<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png?raw=true" alt="Example Product Card Image">
+<td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvjTR9CKfAaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE" alt="Example Product Card Image">
 </td>
 </tr>
 </table>
