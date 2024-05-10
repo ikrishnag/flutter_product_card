@@ -98,7 +98,7 @@ For more detailed usage examples, please refer to the [example](https://github.c
 ```dart
 ProductCard(
   imageUrl:
-      'https://encrypted-tbn3.gstatic.com/sq=tbn:ANd9GcQndSK7hvssofrM2uzv75NxVjrkAwH3RwyqWcBesUsmq1ipmkuljRr6x_SRbCKaBXvaEFtmUFw-69o52wgVMgk2hp8KDYr4FvKtQ8ZfKewgOW4gDQ&usqp=CAE',
+      'https://shorturl.at/oxA34',
   categoryName: 'Pants',
   productName: 'Men Linen Pants',
   price: 199.99,
@@ -121,7 +121,7 @@ ProductCard(
 ```
 
 </td>
-<td><img src="https://shorturl.at/msS38" alt="Example Product Card Image">
+<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png?raw=true" alt="Example Product Card Image">
 </td>
 </tr>
 </table>
