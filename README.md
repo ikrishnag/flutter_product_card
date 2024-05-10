@@ -121,7 +121,7 @@ ProductCard(
 
 </td>
 <td>
-<img  src=""  alt="Example Product Card Image">
+<img  src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png"  alt="Example Product Card Image">
 </td>
 </tr>
 </table>
