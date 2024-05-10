@@ -162,7 +162,7 @@ This package is created and maintained by [Krishna Gupta](https://github.com/iam
 
 If you want to connect or have any questions or need further assistance, feel free to reach out:
 
-- Email: e.krishnagupta@gamil.com
+- Email: e.krishnagupta@gmail.com
 - Twitter: [@krishnagtwt](https://twitter.com/krishnagtwt)
 
 ## License
