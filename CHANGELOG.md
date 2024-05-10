@@ -24,3 +24,9 @@ This is the initial release of the flutter_product_card package, introducing a c
 
 * Resolved minor bugs and issues that were reported or identified.
 * Improved code structure for better maintainability.
+
+## [0.0.4] 
+
+### Version 0.0.4 (2024-05-11)
+
+* Improved the clarity and structure of the changelog for better user experience.
