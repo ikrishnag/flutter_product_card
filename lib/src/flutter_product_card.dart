@@ -50,7 +50,6 @@ class ProductCard extends StatefulWidget {
   /// The discount percentage of the product (optional).
   final double? discountPercentage;
 
-
   /// Creates a [ProductCard] widget.
   const ProductCard({
     super.key,
