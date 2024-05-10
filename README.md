@@ -90,6 +90,7 @@ The ProductCard widget offers various properties to customize its appearance and
 
 For more detailed usage examples, please refer to the [example](https://github.com/iamkrishnagupta/flutter_product_card/tree/main/example) folder in the package repository.
 
+<hr>
 <table>
 <tr>
 <td>
@@ -118,6 +119,7 @@ ProductCard(
   borderRadius: 8.0, // Optional border radius
 )
 ```
+
 </td>
 <td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_card.png?raw=true" alt="Example Product Card Image">
 </td>
