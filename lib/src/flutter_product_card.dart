@@ -17,9 +17,6 @@ class ProductCard extends StatefulWidget {
   /// The name of the product.
   final String productName;
 
-  /// The quantity of the product.
-  final int? quantity;
-
   /// The price of the product.
   final double price;
 
@@ -61,7 +58,6 @@ class ProductCard extends StatefulWidget {
     this.onTap,
     this.onFavoritePressed,
     this.shortDescription = '',
-    this.quantity = 1,
     this.id,
     this.isAvailable = true,
     this.cardColor = const Color(0xFFFFFFFF),
@@ -72,10 +68,10 @@ class ProductCard extends StatefulWidget {
   });
 
   @override
-  _ProductCardState createState() => _ProductCardState();
+  ProductCardState createState() => ProductCardState();
 }
 
-class _ProductCardState extends State<ProductCard> {
+class ProductCardState extends State<ProductCard> {
   bool _isAdded = false;
 
   @override
