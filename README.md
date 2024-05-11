@@ -80,7 +80,7 @@ The ProductCard widget offers various properties to customize its appearance and
 - isAvailable: (bool, optional) A flag indicating whether the product is available (defaults to true).
 - textColor: (Color, optional) The color used for text labels and descriptions (defaults to black).
 - discountPercentage: (double, optional) A value representing the discount percentage for the product (displays a discounted price).
-- rating: (double, optional) The product rating (not yet implemented in this version).
+- rating: (double, optional) The product rating.
 
 
 # Additional information
