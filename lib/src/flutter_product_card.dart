@@ -68,10 +68,10 @@ class ProductCard extends StatefulWidget {
   });
 
   @override
-  _ProductCardState createState() => _ProductCardState();
+  ProductCardState createState() => ProductCardState();
 }
 
-class _ProductCardState extends State<ProductCard> {
+class ProductCardState extends State<ProductCard> {
   bool _isAdded = false;
 
   @override
