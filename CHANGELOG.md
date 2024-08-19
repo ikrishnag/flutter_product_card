@@ -3,11 +3,13 @@
 ### Version 0.0.5 (2024-08-19)
 
 ### Added
-- Updated email address and twitter handle for contact in the README.
+
+* Updated email address and twitter handle for contact in the README.
 
 ### Changed
-- Minor improvements to the documentation.
-- Minor improvements to the Changelog file.
+
+* Minor improvements to the documentation.
+* Minor improvements to the Changelog file.
 
 ## [0.0.4] 
 
