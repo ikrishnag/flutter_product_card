@@ -1,3 +1,11 @@
+## [0.0.6]
+
+### Version 0.0.6 (2024-08-19)
+
+### Changed
+
+* Minor improvements to the README.
+
 ## [0.0.5]
 
 ### Version 0.0.5 (2024-08-19)
