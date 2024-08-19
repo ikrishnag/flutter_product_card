@@ -1,5 +1,7 @@
 ## [0.0.5]
 
+### Version 0.0.5 (2024-08-19)
+
 ### Added
 - Updated email address and twitter handle for contact in the README.
 
