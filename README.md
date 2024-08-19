@@ -150,7 +150,7 @@ This package is created and maintained by [Krishna Gupta](https://www.linkedin.c
 
 If you want to connect or have any questions or need further assistance, feel free to reach out:
 
-- Email: e[dot]krishnagupta[at]gmail[dot]com(mailto:e.krishnagupta@gmail.com)
+- Email: [e[dot]krishnagupta[at]gmail[dot]com](mailto:e.krishnagupta@gmail.com)
 - LinkedIn: [@iamkrishnagupta](https://www.linkedin.com/in/iamkrishnagupta)
 - Twitter: [@krishnagtwts](https://twitter.com/krishnagtwts)
 
