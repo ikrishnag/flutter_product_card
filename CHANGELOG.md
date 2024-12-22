@@ -1,3 +1,11 @@
+## [0.0.7]
+
+### Version 0.0.6 (2024-09-27)
+
+### Changed
+
+* URLs updated in readme.
+
 ## [0.0.6]
 
 ### Version 0.0.6 (2024-08-19)

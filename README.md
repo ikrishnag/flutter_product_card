@@ -87,7 +87,7 @@ The ProductCard widget offers various properties to customize its appearance and
 
 ## Example
 
-For more detailed usage examples, please refer to the [example](https://github.com/iamkrishnagupta/flutter_product_card/tree/main/example) folder in the package repository.
+For more detailed usage examples, please refer to the [example](https://github.com/ikrishnag/flutter_product_card/tree/main/example) folder in the package repository.
 
 ```dart
 class MainApp extends StatelessWidget {
@@ -133,26 +133,27 @@ class MainApp extends StatelessWidget {
 ## Output
 
 </td>
-<td><img src="https://github.com/iamkrishnagupta/flutter_product_card/blob/main/example_productcard.png?raw=true" alt="Example Product Card Image">
+<td><img src="https://github.com/ikrishnag/flutter_product_card/blob/main/example_productcard.png?raw=true" alt="Example Product Card Image">
 </td>
 </tr>
 </table>
 
 ## Contributing
 
-Contributions are welcome! If you encounter any issues or have suggestions for improvements (eg. documentation improvement), please open an issue or submit a pull request on the [GitHub repository](https://github.com/iamkrishnagupta/flutter_product_card).
+Contributions are welcome! If you encounter any issues or have suggestions for improvements (eg. documentation improvement), please open an issue or submit a pull request on the [GitHub repository](https://github.com/ikrishnag/flutter_product_card).
 
 ## Author
 
-This package is created and maintained by [Krishna Gupta](https://www.linkedin.com/in/iamkrishnagupta).
+This package is created and maintained by [Krishna Gupta](https://www.linkedin.com/in/ikrishnag).
 
 ## Contact
 
 If you want to connect or have any questions or need further assistance, feel free to reach out:
 
 - Email: [e[dot]krishnagupta[at]gmail[dot]com](mailto:e.krishnagupta@gmail.com)
-- LinkedIn: [@iamkrishnagupta](https://www.linkedin.com/in/iamkrishnagupta)
+- LinkedIn: [@ikrishnag](https://www.linkedin.com/in/ikrishnag)
 - Twitter: [@krishnagtwts](https://twitter.com/krishnagtwts)
+- GitHub: [@ikrishnag](https://github.com/ikrishnag)
 
 ## License
 
