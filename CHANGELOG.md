@@ -1,6 +1,16 @@
+## [0.0.8]
+
+### Version 0.0.8 (2024-12-22)
+
+### Fixed
+* Ensured `ProductCard` respects `width` and `height` properties directly, eliminating the need for external `SizedBox` wrapping.
+
+### Changed
+* Replaced `withOpacity` usage in color assignments with modern equivalents.
+
 ## [0.0.7]
 
-### Version 0.0.6 (2024-09-27)
+### Version 0.0.7 (2024-09-27)
 
 ### Changed
 
