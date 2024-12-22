@@ -147,7 +147,7 @@ class ProductCardState extends State<ProductCard> {
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: widget.textColor.withOpacity(0.6),
+                      color: Colors.grey.shade600,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -166,7 +166,7 @@ class ProductCardState extends State<ProductCard> {
                       child: Text(
                         widget.shortDescription!,
                         style: TextStyle(
-                          color: widget.textColor.withOpacity(0.7),
+                          color: Colors.grey.shade700,
                           fontSize: 14,
                         ),
                       ),
