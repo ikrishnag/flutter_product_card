@@ -71,7 +71,7 @@ class ProductCard extends StatefulWidget {
     this.borderRadius = 12.0,
     this.rating,
     this.discountPercentage,
-    this.width = 300, 
+    this.width = 300,
     this.height = 360,
   });
 
