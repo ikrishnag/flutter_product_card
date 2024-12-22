@@ -117,20 +117,33 @@ class ProductCardState extends State<ProductCard> {
                 Positioned(
                   top: 8,
                   right: 8,
-                  child: IconButton(
-                    onPressed: () {
-                      setState(() {
-                        _isAdded = !_isAdded;
-                      });
-                      if (widget.onFavoritePressed != null) {
-                        widget.onFavoritePressed!();
-                      }
-                    },
-                    icon: Icon(
-                      _isAdded
-                          ? Icons.favorite_rounded
-                          : Icons.favorite_outline_rounded,
-                      color: _isAdded ? Colors.red : Colors.white,
+                  child: Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(32),
+                      onTap: () {
+                        setState(() {
+                          _isAdded = !_isAdded;
+                        });
+                        if (widget.onFavoritePressed != null) {
+                          widget.onFavoritePressed!();
+                        }
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        padding: const EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                          color: _isAdded ? const Color.fromARGB(255, 245, 30, 15) : Colors.black54,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          _isAdded
+                              ? Icons.favorite_rounded
+                              : Icons.favorite_border_rounded,
+                          color: Colors.white,
+                          size: 18,
+                        ),
+                      ),
                     ),
                   ),
                 ),
