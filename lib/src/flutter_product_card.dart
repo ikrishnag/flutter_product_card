@@ -162,7 +162,7 @@ class ProductCardState extends State<ProductCard> {
                   // Short description (if provided)
                   if (widget.shortDescription!.isNotEmpty)
                     Padding(
-                      padding: const EdgeInsets.only(top: 6.0),
+                      padding: const EdgeInsets.only(top: 4.0),
                       child: Text(
                         widget.shortDescription!,
                         style: TextStyle(
